@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { MovieList } from "@/components/movies/MovieList";
-import { CommentList } from "@/components/CommentList";
+import { CommentList } from "@/components/comments/CommentList";
 
 import { MovieType } from "@/types/movie.type";
 import { ActorType } from "@/types/actor.type";

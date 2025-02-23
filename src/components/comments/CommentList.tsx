@@ -1,7 +1,6 @@
-"use client";
-
 import { CommentType } from "@/types/comment.type";
 import Image from "next/image";
+import LikeButton from "@/components/comments/LikeButton";
 
 type CommentListProps = {
   comments: CommentType[];
@@ -37,7 +36,7 @@ export function CommentList({ comments }: CommentListProps) {
             </p>
 
             <div className="mt-3 flex items-center gap-2 text-xs sm:text-sm text-gray-600">
-              <button className="text-blue-600 hover:underline">Like</button>
+              <LikeButton />
               <span>{comment.likes} likes</span>
             </div>
           </div>
